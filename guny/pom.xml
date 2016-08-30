@@ -23,6 +23,13 @@
      		<version>2.2.10</version>
     	</dependency>
     	
+    	<!-- Necessário para o JSF -->
+    	<dependency>
+    		<groupId>javax.el</groupId>
+    		<artifactId>javax.el-api</artifactId>
+    		<version>2.2.1</version>
+		</dependency>
+    	
 	</dependencies>
   
 </project>

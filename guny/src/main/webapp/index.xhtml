@@ -2,15 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"> 
 
 	<ui:composition template="template/template.xhtml">
 	
 		<ui:define name="content">
 			
-			<h:form>
-				<h:commandButton action="#{searchMB.search()}" value="Search" />
+			<center>	
+			
+			<h:form id="formSearch" styleClass="formSearch">	
+				<h:inputText id="inputSearch" value="#{searchMB.searchValue}" maxlength="150" pt:placeholder="Diga o que você procura..." styleClass="inputSearch"/>
+				<h:commandButton id="buttonSearch" action="#{searchMB.search()}" value="Buscar" styleClass="buttonSearch"/>		
 			</h:form>
+	
+			</center>
 		
 		</ui:define>
 	

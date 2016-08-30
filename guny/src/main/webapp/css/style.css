@@ -1,6 +1,62 @@
 @CHARSET "ISO-8859-1";
 
 .body{
+
+	font-size: 13px;
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	background-color: #FFF;	
+	margin: 0px;
+}
+
+/* Input */
+.inputSearch{
 	
-	background-color: green;	
+	height: 35px;
+	width: 50%; 
+	padding-right: 65px;
+	padding-left: 10px;
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+/* Button */
+.buttonSearch{
+	
+	height: 35px;
+	margin-left: -61px;
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+/* Form */
+.formSearch{
+	
+	margin-top: 300px;
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.formMenu{
+	
+	width: 90%;
+	margin-top: 10px;
+	border-bottom: 1px solid #DDD;
+}
+
+/* Output */
+.outputTextFooter{
+	
+	font-size: 10px;
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+/* Link */
+.linkMenu{
+	
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Panel */
+.panelGridMenu{
+	
+	margin-bottom: 5px;
 }
