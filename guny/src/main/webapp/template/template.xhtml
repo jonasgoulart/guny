@@ -10,7 +10,7 @@
 
 	<h:body styleClass="body">
 	
-		<center>
+		<center class="header">
 		<ui:insert name="header">
 			<ui:include src="header.xhtml" />
 		</ui:insert>
@@ -18,13 +18,15 @@
 		
 		<br/>
 		
+		<center class="content">
 		<ui:insert name="content">
 			<ui:include src="content.xhtml" />	
 		</ui:insert>
+		</center>
 		
 		<br/>
 		
-		<center>
+		<center class="footer">
 		<ui:insert name="footer">
 			<ui:include src="footer.xhtml" />	
 		</ui:insert>
