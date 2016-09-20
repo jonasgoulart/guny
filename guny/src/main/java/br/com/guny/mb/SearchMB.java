@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
+import br.com.guny.enums.PageEnum;
+
 @RequestScoped
 @ManagedBean(name="searchMB")
 public class SearchMB implements Serializable{
@@ -13,11 +15,14 @@ public class SearchMB implements Serializable{
 	
 	private String searchValue;
 
-	public String search(){		
-		System.out.println("Search for "+searchValue);
-		return null;
+	public String search(){				
+		return PageEnum.ORDER_INFO.getPage();
 	}
-
+	
+	public String send(){				
+		return PageEnum.ORDER_MESSAGE.getPage();
+	}
+	
 	public String getSearchValue() {		
 		return searchValue;
 	}

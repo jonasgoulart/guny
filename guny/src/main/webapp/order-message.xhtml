@@ -12,8 +12,11 @@
 			<center>	
 			
 			<h:form id="formSearch" styleClass="formSearch">	
-				<h:inputText id="inputSearch" value="#{searchMB.searchValue}" maxlength="150" pt:placeholder="Diga o que você procura..." styleClass="inputSearch"/>
-				<h:commandButton id="buttonSearch" action="#{searchMB.search()}" value="Buscar" styleClass="buttonSearch"/>		
+				
+				<div style="margin-bottom: 2px">
+				<h:outputLabel for="labelSearch" value="Parabéns! Agora é só aguardar que vendedores entrarão em contato com você." styleClass="labelSearch"/>
+				</div>	
+								
 			</h:form>
 	
 			</center>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"> 
+
+	<ui:composition template="template/template.xhtml">
+	
+		<ui:define name="content">
+			
+			<center>	
+			
+			<h:form id="formOrderInfo" styleClass="formOrderInfo">	
+				
+				<div style="margin-bottom: 2px">
+				<h:outputLabel for="labelSearch" value="Negocie direto com vendedores de São Paulo e Região os melhores preços e condições!" styleClass="labelSearch"/>
+				</div>
+				
+				<div style="margin-bottom: 6px">
+				<h:outputText id="outputSearch" value="Aqui você encontra os melhores vendedores de TV Sony Bravia!" styleClass="outputSearch"/>
+				</div>	
+			
+				<div style="margin-bottom: 15px; width: 70%;">
+				<h:inputTextarea id="yourName" styleClass="inputTextAreaInput" pt:placeholder="Qual o seu nome?" pt:maxlength="50"/>	
+				<br/>
+				<h:inputTextarea id="yourMail" styleClass="inputTextAreaInput"  pt:placeholder="Qual o seu e-mail?" pt:maxlength="150"/>	
+				<br/>
+				<h:selectOneMenu id="city" styleClass="selectItem">
+					<f:selectItem itemLabel="Onde devemos procurar?" itemValue="0"></f:selectItem>
+					<f:selectItem itemLabel="Belo Horizonte - MG" itemValue="1"></f:selectItem>
+					<f:selectItem itemLabel="São Paulo - SP" itemValue="2"></f:selectItem>
+				</h:selectOneMenu>
+				<br/>
+				<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="Descreva sobre o produto" />	
+				<br/>
+				<h:outputText value="*Essas informações serão enviadas aos vendedores selecionados." style="font-size: 12px; font-style: italic; float: right"/>
+				</div>
+				
+				<br/>
+				
+				<div style="margin-bottom: 2px">
+				<h:commandButton id="buttonSend" action="#{searchMB.send()}" value="Enviar Pedido" styleClass="buttonSend"/>
+				</div>
+				
+			</h:form>
+	
+			</center>
+		
+		</ui:define>
+	
+	</ui:composition>
+	
+</html>
