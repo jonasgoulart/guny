@@ -2,9 +2,9 @@ package br.com.guny.enums;
 
 public enum PageEnum {
 
-	SEARCH("search"),
-	ORDER_INFO("order-info"),
-	ORDER_MESSAGE("order-message");
+	SEARCH("pretty:search"),
+	ORDER("pretty:order"),
+	MESSAGE("pretty:message");
 	
 	private String page;
 	

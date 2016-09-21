@@ -26,5 +26,10 @@
     	<param-name>environment</param-name>
     	<param-value>develop</param-value>
 	</context-param>
+	
+    <error-page>
+        <error-code>404</error-code>
+        <location>/page-not-found.xhtml</location>
+    </error-page>
 
 </web-app>

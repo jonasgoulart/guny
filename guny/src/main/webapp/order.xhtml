@@ -14,25 +14,29 @@
 			<h:form id="formOrderInfo" styleClass="formOrderInfo">	
 				
 				<div style="margin-bottom: 2px">
-				<h:outputLabel for="labelSearch" value="Negocie direto com vendedores de São Paulo e Região os melhores preços e condições!" styleClass="labelSearch"/>
+				<h:outputText id="title" value="Negocie direto com vendedores de São Paulo e Região os melhores preços e condições!" styleClass="title"/>
 				</div>
 				
-				<div style="margin-bottom: 6px">
-				<h:outputText id="outputSearch" value="Aqui você encontra os melhores vendedores de TV Sony Bravia!" styleClass="outputSearch"/>
+				<div style="margin-bottom: 8px">
+				<h:outputText id="subTitle" value="Aqui você encontra os melhores vendedores de TV Sony Bravia!" styleClass="subTitle"/>
+				<h:link id="link-not" outcome="search" value="Não é isso?" styleClass="link-not"/>
 				</div>	
 			
 				<div style="margin-bottom: 15px; width: 70%;">
-				<h:inputTextarea id="yourName" styleClass="inputTextAreaInput" pt:placeholder="Qual o seu nome?" pt:maxlength="50"/>	
+				<h:outputLabel id="yourNameLabel" value="Qual o seu nome?" for="yourName" styleClass="label-form"/>
+				<h:inputTextarea id="yourName" styleClass="inputTextAreaInput" pt:placeholder="" pt:maxlength="50"/>	
 				<br/>
-				<h:inputTextarea id="yourMail" styleClass="inputTextAreaInput"  pt:placeholder="Qual o seu e-mail?" pt:maxlength="150"/>	
+				<h:outputLabel id="yourMailLabel" value="Qual o seu e-mail?" for="yourMail" styleClass="label-form"/>
+				<h:inputTextarea id="yourMail" styleClass="inputTextAreaInput"  pt:placeholder="" pt:maxlength="100"/>	
 				<br/>
-				<h:selectOneMenu id="city" styleClass="selectItem">
+				<!--h:selectOneMenu id="city" styleClass="selectItem">
 					<f:selectItem itemLabel="Onde devemos procurar?" itemValue="0"></f:selectItem>
 					<f:selectItem itemLabel="Belo Horizonte - MG" itemValue="1"></f:selectItem>
 					<f:selectItem itemLabel="São Paulo - SP" itemValue="2"></f:selectItem>
 				</h:selectOneMenu>
-				<br/>
-				<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="Descreva sobre o produto" />	
+				<br/-->
+				<h:outputLabel id="describeLabel" value="Fale sobre o produto" for="describe" styleClass="label-form"/>
+				<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="" />	
 				<br/>
 				<h:outputText value="*Essas informações serão enviadas aos vendedores selecionados." style="font-size: 12px; font-style: italic; float: right"/>
 				</div>

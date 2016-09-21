@@ -43,11 +43,25 @@
 }
 
 
+.link-not{
+	color: #3a3a3a;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.link-not:hover{
+	color: #ff6600;
+	text-decoration: underline;
+}
+
+
 /* Input */
 .inputSearch{
 	
 	height: 44px;
-	width: 50%; 
+	width: 60%; 
 	padding-right: 65px;
 	padding-left: 10px;
 	border-radius: 3px;
@@ -56,16 +70,14 @@
 	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
-/* Output */
-.outputSearch{
+.subTitle{
 	
 	font-size: 16px; font-weight: bold; font-style: italic; color: rgba(0, 0, 0, 0.8);
 	font-family: "Lato", sans-serif;
 	letter-spacing: -1px;
 }
 
-/* Label */
-.labelSearch{
+.title{
 	
 	font-family: "Lato", sans-serif;
 	font-weight: bold;
@@ -136,7 +148,8 @@
 	padding-left: 7px;
 	padding-right: 7px;
 	padding-top: 7px;
-	margin-top: 20px;
+	margin-top: 4px;
+	margin-bottom: 7px;
 	resize: none;
 	border-radius: 3px;
 	border: 1px solid #CCC;
@@ -150,9 +163,10 @@
 	height: 25px;
 	padding-left: 7px;
 	padding-right: 7px;
-	padding-top: 9px;
+	padding-top: 10px;
 	padding-bottom: 4px;
-	margin-top: 15px;
+	margin-top: 4px;
+	margin-bottom: 7px;
 	resize: none;
 	border-radius: 3px;
 	border: 1px solid #CCC;
@@ -174,6 +188,12 @@
 	border: 1px solid #CCC;
 	box-shadow: inset -1px 1px 2px rgba(0,0,0,0.1);
 	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+
+.label-form{
+	float: left;
+	font-weight: bold;
 }
 
 

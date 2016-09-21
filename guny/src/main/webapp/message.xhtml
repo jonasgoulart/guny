@@ -2,8 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"> 
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
 
 	<ui:composition template="template/template.xhtml">
 	
@@ -11,14 +10,10 @@
 			
 			<center>	
 			
-			<h:form id="formSearch" styleClass="formSearch">	
-				
-				<div style="margin-bottom: 2px">
-				<h:outputLabel for="labelSearch" value="Parabéns! Agora é só aguardar que vendedores entrarão em contato com você." styleClass="labelSearch"/>
+				<div style="margin-top: 15%;">
+					<h:outputText id="message" value="Parabéns! Agora é só aguardar que vendedores entrarão em contato com você." styleClass="title"/>
 				</div>	
-								
-			</h:form>
-	
+									
 			</center>
 		
 		</ui:define>
