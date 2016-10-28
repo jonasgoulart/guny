@@ -3,13 +3,22 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"> 
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:p="http://primefaces.org/ui"> 
 
 	<ui:composition template="template/template.xhtml">
 	
 		<ui:define name="content">
 			
 			<center>	
+			
+			<h:form>
+    			<h:outputText id="txt_count" value="#{orderNotificationMB.message}" />
+    			<p:poll interval="10" listener="#{orderNotificationMB.verify}" update="txt_count" />
+			</h:form>
+			
+			<br/>
+			<br/>
 			
 			<h:form id="formSearch" styleClass="formSearch">
 			
