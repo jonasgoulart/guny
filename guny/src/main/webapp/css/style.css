@@ -72,7 +72,7 @@
 
 .inputDefault{
 	
-	width: 100%;
+	width: 100% !important;
 	height: 32px;
 	padding-left: 7px;
 	padding-right: 7px;
@@ -189,7 +189,7 @@
 
 .inputTextArea{
 	
-	width: 100%;
+	width: 100% !important;
 	height: 100px;
 	padding-left: 7px;
 	padding-right: 7px;
@@ -223,11 +223,9 @@
 .selectItem{
 
 	width: 101.75%;
-	height: 40px;
+	height: 32px;
 	padding-left: 7px;
 	padding-right: 7px;
-	padding-top: 5px;
-	padding-bottom: 4px;
 	margin-top: 15px;
 	resize: none;
 	border-radius: 3px;
@@ -249,3 +247,38 @@
 }
 
 
+.ui-inputfield, .ui-state-focus, .ui-state-hover{
+    background: #FFF !important;
+    border: 1px solid #CCC;
+    color: #FF6600;
+    box-shadow: none;
+}
+
+.ui-state-default{
+	background: none;
+	font-weight: normal;	
+}
+
+
+.ui-state-active{
+    color: #FF6600;
+    font-weight: bold;	
+}
+
+.ui-corner-right, .ui-corner-left{
+
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.ui-widget{
+	font-size: 13px;
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.ui-button-text{
+	
+}

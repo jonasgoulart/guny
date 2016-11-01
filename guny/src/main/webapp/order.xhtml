@@ -3,7 +3,8 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"> 
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:p="http://primefaces.org/ui"> 
 
 	<ui:composition template="template/template.xhtml">
 	
@@ -19,19 +20,35 @@
 					<h:outputLabel value="É fácil, prático e pode te ajudar à econimizar uma graninha" styleClass="subTitle"/>
 				</div>
 					
-				<div style="width: 50%">
-					<h:outputLabel id="whatLabel" value="O que você está procurando?" for="what" styleClass="label-form"/>
-					<h:inputText id="what" styleClass="inputDefault" pt:placeholder="" />
-					<br/>
-					<br/>
-					<h:outputLabel id="describeLabel" value="Fale sobre o produto" for="describe" styleClass="label-form"/>
-					<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="" />	
-					<br/>
-					<h:outputText value="*Essas informações serão enviadas aos vendedores selecionados." style="font-size: 12px; font-style: italic; float: right"/>
-					<br/>
-					<br/>
-					<br/>
+				<div style="width: 55%; margin-top: 35px">
+				
+					<div style="display: table; width: 100%">
+					<h:outputLabel value="Escolha o que você está procurando" for="categories" styleClass="label-form"/>
+					<p:selectOneButton id="categories" value="#{selectOneView.option}" style="float: left">
+						<f:selectItem itemLabel="Câmeras e Filmadoras" itemValue="Wii U" />
+            			<f:selectItem itemLabel="Celulares e Telefonia" itemValue="Wii U" />
+            			<f:selectItem itemLabel="DVDs e Blu-ray" itemValue="Wii U" />
+            			<f:selectItem itemLabel="Eletrodomésticos" itemValue="Wii U" />  
+            			<f:selectItem itemLabel="Eletrônicos" itemValue="Xbox One" />       			
+            			<f:selectItem itemLabel="Informática e Tablet" itemValue="Wii U" />
+            			<f:selectItem itemLabel="Instrumentos Musicais" itemValue="Wii U" />
+            			<f:selectItem itemLabel="Livros" itemValue="Wii U" />
+            			<f:selectItem itemLabel="Música, Filmes e Games" itemValue="Wii U" />
+            			<f:selectItem itemLabel="Perfumes, Beleza e Saúde" itemValue="Wii U" />
+           	 			<f:selectItem itemLabel="TV, Áudio e Home Theater" itemValue="PS4" />
+           	 			<f:selectItem itemLabel="Viagens" itemValue="Xbox One" />       	 	
+        			</p:selectOneButton>
+        			</div>
+        		
+        			<div style="display: table; margin-top: 25px; width: 100%">
+        			<h:outputLabel id="describeLabel" value="Fale um pouco sobre o produto" for="describe" styleClass="label-form"/>		
+        			<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="" />	
+        			</div>
+        			
+        			<div style="display: table; margin-top: 50px; width: 100%">
 					<h:commandButton id="buttonBuy" value="Enviar Pedido" styleClass="buttonBuy buttonDefault"/>
+					</div>
+					
 				</div>
 				
 			</h:form>
