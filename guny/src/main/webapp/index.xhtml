@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:p="http://primefaces.org/ui"> 
+
+	<ui:composition template="template/template.xhtml">
+	
+		<ui:define name="content">
+			
+			<center>	
+			
+			<h:form id="formSearch" styleClass="formSearch">
+			
+				<div style="margin-bottom: 4px">
+					<h:outputLabel value="Consiga melhores preços negociando direto com quem vende" styleClass="title"/>
+					<br/>
+					<h:outputLabel value="É fácil, prático e pode te ajudar à econimizar uma graninha" styleClass="subTitle"/>
+				</div>
+			
+				<div>
+					<h:commandButton id="buttonBuy" value="Quero Comprar" styleClass="buttonBuy buttonDefault"/>	
+					<h:commandButton id="buttonSell" value="Quero Vender" styleClass="buttonSell buttonDefault"/>		
+				</div>
+			
+			</h:form>
+	
+			</center>
+		
+		</ui:define>
+	
+	</ui:composition>
+	
+</html>
