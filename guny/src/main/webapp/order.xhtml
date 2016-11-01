@@ -13,38 +13,25 @@
 			
 			<h:form id="formOrderInfo" styleClass="formOrderInfo">	
 				
-				<div style="margin-bottom: 2px">
-				<h:outputText id="title" value="Negocie direto com vendedores de São Paulo e Região os melhores preços e condições!" styleClass="title"/>
+				<div style="margin-bottom: 4px">
+					<h:outputLabel value="Consiga melhores preços negociando direto com quem vende" styleClass="title"/>
+					<br/>
+					<h:outputLabel value="É fácil, prático e pode te ajudar à econimizar uma graninha" styleClass="subTitle"/>
 				</div>
-				
-				<div style="margin-bottom: 8px">
-				<h:outputText id="subTitle" value="Aqui você encontra os melhores vendedores de TV Sony Bravia!" styleClass="subTitle"/>
-				<h:link id="link-not" outcome="search" value="Não é isso?" styleClass="link-not"/>
-				</div>	
-			
-				<div style="margin-bottom: 15px; width: 70%;">
-				<h:outputLabel id="yourNameLabel" value="Qual o seu nome?" for="yourName" styleClass="label-form"/>
-				<h:inputTextarea id="yourName" styleClass="inputTextAreaInput" pt:placeholder="" pt:maxlength="50"/>	
-				<br/>
-				<h:outputLabel id="yourMailLabel" value="Qual o seu e-mail?" for="yourMail" styleClass="label-form"/>
-				<h:inputTextarea id="yourMail" styleClass="inputTextAreaInput"  pt:placeholder="" pt:maxlength="100"/>	
-				<br/>
-				<!--h:selectOneMenu id="city" styleClass="selectItem">
-					<f:selectItem itemLabel="Onde devemos procurar?" itemValue="0"></f:selectItem>
-					<f:selectItem itemLabel="Belo Horizonte - MG" itemValue="1"></f:selectItem>
-					<f:selectItem itemLabel="São Paulo - SP" itemValue="2"></f:selectItem>
-				</h:selectOneMenu>
-				<br/-->
-				<h:outputLabel id="describeLabel" value="Fale sobre o produto" for="describe" styleClass="label-form"/>
-				<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="" />	
-				<br/>
-				<h:outputText value="*Essas informações serão enviadas aos vendedores selecionados." style="font-size: 12px; font-style: italic; float: right"/>
-				</div>
-				
-				<br/>
-				
-				<div style="margin-bottom: 2px">
-				<h:commandButton id="buttonSend" action="#{searchMB.send()}" value="Enviar Pedido" styleClass="buttonSend"/>
+					
+				<div style="width: 50%">
+					<h:outputLabel id="whatLabel" value="O que você está procurando?" for="what" styleClass="label-form"/>
+					<h:inputText id="what" styleClass="inputDefault" pt:placeholder="" />
+					<br/>
+					<br/>
+					<h:outputLabel id="describeLabel" value="Fale sobre o produto" for="describe" styleClass="label-form"/>
+					<h:inputTextarea id="describe" styleClass="inputTextArea" pt:placeholder="" />	
+					<br/>
+					<h:outputText value="*Essas informações serão enviadas aos vendedores selecionados." style="font-size: 12px; font-style: italic; float: right"/>
+					<br/>
+					<br/>
+					<br/>
+					<h:commandButton id="buttonBuy" value="Enviar Pedido" styleClass="buttonBuy buttonDefault"/>
 				</div>
 				
 			</h:form>
