@@ -8,7 +8,7 @@
     <display-name>Guny.com.br</display-name>
 
 	<welcome-file-list>
-        <welcome-file>search.xhtml</welcome-file>
+        <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
 
     <servlet>
