@@ -11,8 +11,9 @@ import br.com.guny.domain.Category;
 
 public class CategoryService {
 	
-	public TagCloudModel getAllCategories(){
+	public TagCloudModel getTagCloudModelCategory(){
 		
+		/* Listar todas as categorias ativas */
 		List<Category> categories = new ArrayList<Category>();
 		categories.add(new Category("Câmeras e Filmadoras"));
 		categories.add(new Category("Celulares e Smartphones"));	
@@ -31,7 +32,7 @@ public class CategoryService {
 		
 		TagCloudModel model = new DefaultTagCloudModel();
 			
-		
+		/* Montar a lista de categorias a serem exibidas no TagCloudModel do primefaces */
 		for(Category category : categories){
 			
 			model.addTag(new DefaultTagCloudItem(category.getName(), (int)(5 * Math.random())));

@@ -13,10 +13,11 @@ public class OrderMB {
 	
 	private TagCloudModel model;
 	private String title = null;
+	private String username;
 		
     public OrderMB() {
     	
-        model = new CategoryService().getAllCategories();
+        model = new CategoryService().getTagCloudModelCategory();
         
         /*new DefaultTagCloudModel();
         model.addTag(new DefaultTagCloudItem("Câmeras e Filmadoras", 2));
@@ -35,6 +36,7 @@ public class OrderMB {
     
     public void loadDataOrder(){
     	
+    	username = "Jonas";
     }
     
     public TagCloudModel getModel() {
@@ -47,5 +49,13 @@ public class OrderMB {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 }

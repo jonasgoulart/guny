@@ -189,17 +189,19 @@
 
 .inputTextArea{
 	
-	width: 50% !important;
+	width: 60% !important;
 	height: 200px;
-	padding-left: 7px;
-	padding-right: 7px;
-	padding-top: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-top: 5px;
 	margin-bottom: 7px;
 	resize: none;
 	border-radius: 3px;
 	border: 1px solid #CCC;
 	box-shadow: inset -1px 1px 2px rgba(0,0,0,0.1);
+	font-size: 14px !important;
 	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
