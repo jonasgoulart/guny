@@ -189,12 +189,12 @@
 
 .inputTextArea{
 	
-	width: 100% !important;
-	height: 100px;
+	width: 50% !important;
+	height: 200px;
 	padding-left: 7px;
 	padding-right: 7px;
 	padding-top: 7px;
-	margin-top: 4px;
+	margin-top: 5px;
 	margin-bottom: 7px;
 	resize: none;
 	border-radius: 3px;
@@ -247,11 +247,13 @@
 }
 
 
+/* Primefaces CSS */
 .ui-inputfield, .ui-state-focus, .ui-state-hover{
     background: #FFF !important;
-    border: 1px solid #CCC;
-    color: #FF6600;
-    box-shadow: none;
+    border: 0px solid #CCC !important;
+    color: #FF6600 !important;
+    box-shadow: none !important;
+    font-weight: bold !important;
 }
 
 .ui-state-default{
@@ -259,6 +261,9 @@
 	font-weight: normal;	
 }
 
+.ui-buttonset, .ui-button{
+	
+}
 
 .ui-state-active{
     color: #FF6600;
@@ -281,4 +286,15 @@
 
 .ui-button-text{
 	
+}
+
+.ui-tagcloud{
+    width: 100%;
+}
+
+.ui-widget-content{
+    border: 0px solid #A8A8A8;
+    background: #FFF;
+    color: #4F4F4F;
+    box-shadow: none;
 }
