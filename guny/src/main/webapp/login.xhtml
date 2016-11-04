@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:p="http://primefaces.org/ui"> 
 
 	<ui:composition template="template/template.xhtml">
 	
@@ -10,10 +12,14 @@
 			
 			<center>	
 			
-				<div style="margin-top: 15%;">
-					<h:outputText id="message" value="Parabéns! Agora é só aguardar que vendedores entrarão em contato com você." styleClass="title"/>				
-				</div>	
-									
+			<h:form id="formLogin" styleClass="formLogin">
+			
+				<div style="margin-top: 5px">
+					<h:commandButton id="buttonGoogleLogin" value="Acessar" action="#{sessionMB.loginWithGoogle}" styleClass="buttonGoogleLogin buttonDefault"/>	
+				</div>
+			
+			</h:form>
+	
 			</center>
 		
 		</ui:define>

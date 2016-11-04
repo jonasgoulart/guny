@@ -15,19 +15,19 @@
 			<h:form id="formOrderInfo" styleClass="formOrderInfo">	
 				
 				<div style="margin-bottom: 4px;">
-					<h:outputLabel value="#{orderMB.title} com preço e condição feitos para você" styleClass="title"/>
+					<h:outputLabel value="#{orderMB.orderForm.category} com preço e condição feitos para você" styleClass="title"/>
 					<br/>
 					<h:outputLabel value="É fácil, prático e pode te ajudar à econimizar uma graninha" styleClass="subTitle"/>
 						
 					<div style="margin: 15px;"/>
 					
-					<h:inputTextarea value="" pt:placeholder="Olá #{orderMB.username}, fale sobre o produto. Diga-nos a marca, modelo e outras informações importantes." styleClass="inputTextArea"/>
+					<h:inputTextarea value="" pt:placeholder="Olá #{sessionMB.user.name}, fale sobre o produto. Diga-nos a marca, modelo e outras informações importantes." styleClass="inputTextArea"/>
 					
 					<div style="margin: 15px"/>
 					
 					<h:link value="voltar" outcome="order" styleClass="link"/>
 					
-					<h:commandButton id="buttonBuy" value="Enviar Pedido" action="#{pageRedirectMB.openOrderPage}" styleClass="buttonBuy buttonDefault"/>	
+					<h:commandButton id="buttonBuy" value="Enviar Pedido" action="#{orderMB.sendOrder}" styleClass="buttonBuy buttonDefault"/>	
 
 				</div>
 

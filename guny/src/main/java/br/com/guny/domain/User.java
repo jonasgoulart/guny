@@ -1,22 +1,22 @@
 package br.com.guny.domain;
 
-public class Category {
+public class User {
 	
 	private String name;
-		
-	public Category() {
+	
+	public User() {
 		super();
 	}
 	
-	public Category(String name) {
+	public User(String name) {
 		super();
 		this.name = name;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}

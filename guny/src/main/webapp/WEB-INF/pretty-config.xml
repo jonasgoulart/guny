@@ -3,6 +3,11 @@
   xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
                       http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
 
+	<url-mapping id="login">
+		<pattern value="/login" />
+		<view-id value="/login.xhtml" />
+	</url-mapping>
+
 	<url-mapping id="index">
 		<pattern value="/index" />
 		<view-id value="/index.xhtml" />
@@ -24,7 +29,7 @@
 	</url-mapping>
 	
 	<url-mapping id="order-describe">
-    	<pattern value="/order/#{orderMB.title}" />
+    	<pattern value="/order/#{orderMB.orderForm.category}" />
     	<view-id value="/order-describe.xhtml" />
     	<action>#{orderMB.loadDataOrder}</action>
 	</url-mapping>
