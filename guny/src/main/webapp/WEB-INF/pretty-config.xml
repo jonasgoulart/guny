@@ -28,6 +28,11 @@
 		<view-id value="/message.xhtml" />
 	</url-mapping>
 	
+	<url-mapping id="how-stuff-works">
+		<pattern value="/how-stuff-works" />
+		<view-id value="/how-stuff-works.xhtml" />
+	</url-mapping>
+	
 	<url-mapping id="order-describe">
     	<pattern value="/order/#{orderMB.orderForm.category}" />
     	<view-id value="/order-describe.xhtml" />
