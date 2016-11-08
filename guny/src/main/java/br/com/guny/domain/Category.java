@@ -1,6 +1,6 @@
 package br.com.guny.domain;
 
-public class Category {
+public class Category extends Domain{
 	
 	private String name;
 		

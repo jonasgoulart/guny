@@ -9,12 +9,14 @@ import javax.faces.context.FacesContext;
 import org.primefaces.event.SelectEvent;
 import org.primefaces.model.tagcloud.TagCloudItem;
 
+import br.com.guny.enums.PageEnum;
+
 @ManagedBean
 @ViewScoped
 public class PageRedirectMB {
 	
 	public String openOrderPage(){
-		return "pretty:order";
+		return PageEnum.ORDER.getValue();
 	}
 	
 	public void openOrderDescribePage(SelectEvent event) throws IOException{

@@ -5,6 +5,7 @@ import javax.faces.bean.ViewScoped;
 
 import org.primefaces.model.tagcloud.TagCloudModel;
 
+import br.com.guny.enums.PageEnum;
 import br.com.guny.form.OrderForm;
 import br.com.guny.services.CategoryService;
 
@@ -25,7 +26,7 @@ public class OrderMB {
     }
    
     public String sendOrder(){	
-    	return "pretty:message";
+    	return PageEnum.MESSAGE.getValue();
     }
     
     public TagCloudModel getModel() {

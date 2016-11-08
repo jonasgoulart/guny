@@ -6,13 +6,13 @@ public enum PageEnum {
 	ORDER("pretty:order"),
 	MESSAGE("pretty:message");
 	
-	private String page;
+	private String value;
 	
 	PageEnum(String page){
-		this.page = page;
+		this.value = page;
 	}
 
-	public String getPage() {
-		return page;
+	public String getValue() {
+		return value;
 	}
 }

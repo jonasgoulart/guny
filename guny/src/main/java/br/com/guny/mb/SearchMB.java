@@ -16,11 +16,11 @@ public class SearchMB implements Serializable{
 	private String searchValue;
 
 	public String search(){				
-		return PageEnum.ORDER.getPage();
+		return PageEnum.ORDER.getValue();
 	}
 	
 	public String send(){				
-		return PageEnum.MESSAGE.getPage();
+		return PageEnum.MESSAGE.getValue();
 	}
 	
 	public String getSearchValue() {		
