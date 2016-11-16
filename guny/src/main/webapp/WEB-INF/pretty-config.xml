@@ -38,5 +38,11 @@
     	<view-id value="/order-describe.xhtml" />
     	<action>#{orderMB.loadDataOrder}</action>
 	</url-mapping>
+	
+	<url-mapping id="orders">
+    	<pattern value="/orders" />
+    	<view-id value="/orders.xhtml" />
+    	<action>#{orderMB.loadOrders}</action>
+	</url-mapping>
 
 </pretty-config>

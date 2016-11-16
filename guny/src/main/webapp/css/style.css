@@ -43,17 +43,14 @@
 }
 
 
-.link-not{
+.link-order-detail{
 	color: #3a3a3a;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
     font-size: 10px;
 }
 
-.link-not:hover{
+.link-order-detail:hover{
 	color: #ff6600;
-	text-decoration: underline;
 }
 
 
