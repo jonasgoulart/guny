@@ -14,7 +14,7 @@ public class SessionMB {
 	
 	public String loginWithGoogle(){
 		user = new User("Jonas Goulart", "jgm.melo@gmail.com");
-		return PageEnum.ORDER.getValue();
+		return PageEnum.BUY_ORDER.getValue();
 	}
 
 	public User getUser() {

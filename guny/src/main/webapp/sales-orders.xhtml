@@ -15,18 +15,17 @@
 			<h:form id="formOrderInfo" styleClass="formOrderInfo">	
 				
 				<div style="margin-bottom: 15px">
-					<h:outputLabel value="Encontre novos clientes, faça um ótimo atendimento e venda mais!" styleClass="title"/>
+					<h:outputLabel value="Está vendendo #{orderMB.orderForm.category}? Temos ótimas oportunidades para você!" styleClass="title"/>
 					<br/>
 					<h:outputLabel value="É fácil, prático e pode te ajudar à conquistar novos clientes. Veja abaixo o que eles estão procurando" styleClass="subTitle"/>
 				</div>
 				
 				<div style="width: 120px; border-top: 2px solid #ff6600"/>
-							
+												
 				<div style="width: 60%; margin-top: 25px; text-align: left; font-size: 14px;">
 				
     				<p:repeat var="order" value="#{orderMB.orders}">
-    					<h:panelGrid columns="1" style="margin-bottom: 25px">
-    						<h:outputText value="#{order.category.name}" style="font-weight: bold; font-size: 16px"/>
+    					<h:panelGrid columns="1" style="margin-bottom: 25px"> 						
     						<h:outputText value="Estou em #{order.city.name} - #{order.city.initialState}, publicado à 2 dias" style="font-size: 11px; font-style: italic;"/>
     						<h:link value="#{order.describe}" styleClass="link-order-detail"/>
     					</h:panelGrid>

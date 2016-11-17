@@ -12,19 +12,24 @@
 			
 			<center>	
 			
-			<h:form id="formSearch" styleClass="formSearch">
-			
-				<div style="margin-bottom: 4px">
+			<h:form id="formOrderInfo" styleClass="formOrderInfo">	
+				
+				<div style="margin-bottom: 15px">
 					<h:outputLabel value="Consiga melhores preços negociando direto com quem vende" styleClass="title"/>
 					<br/>
-					<h:outputLabel value="É fácil, prático e pode te ajudar à econimizar uma graninha" styleClass="subTitle"/>
+					<h:outputLabel value="É fácil, prático e pode te ajudar à econimizar uma graninha. Escolha uma das opções abaixo:" styleClass="subTitle"/>
 				</div>
-			
-				<div style="margin-top: 5px">
-					<h:commandButton id="buttonBuy" value="Quero Comprar" action="#{pageRedirectMB.openBuyPage}" styleClass="buttonBuy buttonDefault"/>	
-					<h:commandButton id="buttonSell" value="Quero Vender" action="#{pageRedirectMB.openSellPage}" styleClass="buttonSell buttonDefault"/>		
+				
+				<div style="width: 120px; border-top: 2px solid #ff6600"/>
+							
+				<div style="width: 60%; margin-top: 15px">
+				
+    				<p:tagCloud model="#{orderMB.model}">
+        				<p:ajax event="select" listener="#{pageRedirectMB.openOrdersDescribesPage}" />
+    				</p:tagCloud>
+    				
 				</div>
-			
+				
 			</h:form>
 	
 			</center>

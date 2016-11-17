@@ -18,9 +18,26 @@
 		<view-id value="/search.xhtml" />
 	</url-mapping>
 	
-	<url-mapping id="order">
-		<pattern value="/order" />
-		<view-id value="/order.xhtml" />
+	<url-mapping id="buy-order">
+		<pattern value="/buy-order" />
+		<view-id value="/buy-order.xhtml" />
+	</url-mapping>
+	
+	<url-mapping id="buy-order-describe">
+    	<pattern value="/buy-order/#{orderMB.orderForm.category}" />
+    	<view-id value="/buy-order-describe.xhtml" />
+    	<action>#{orderMB.loadDataOrder}</action>
+	</url-mapping>
+	
+	<url-mapping id="sales-order">
+    	<pattern value="/sales-order" />
+    	<view-id value="/sales-order.xhtml" />
+	</url-mapping>
+	
+	<url-mapping id="sales-orders">
+    	<pattern value="/sales-orders/#{orderMB.orderForm.category}" />
+    	<view-id value="/sales-orders.xhtml" />
+    	<action>#{orderMB.loadOrders}</action>
 	</url-mapping>
 	
 	<url-mapping id="message">
@@ -33,16 +50,4 @@
 		<view-id value="/how-stuff-works.xhtml" />
 	</url-mapping>
 	
-	<url-mapping id="order-describe">
-    	<pattern value="/order/#{orderMB.orderForm.category}" />
-    	<view-id value="/order-describe.xhtml" />
-    	<action>#{orderMB.loadDataOrder}</action>
-	</url-mapping>
-	
-	<url-mapping id="orders">
-    	<pattern value="/orders" />
-    	<view-id value="/orders.xhtml" />
-    	<action>#{orderMB.loadOrders}</action>
-	</url-mapping>
-
 </pretty-config>

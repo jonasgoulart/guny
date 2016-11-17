@@ -16,7 +16,7 @@ public class SearchMB implements Serializable{
 	private String searchValue;
 
 	public String search(){				
-		return PageEnum.ORDER.getValue();
+		return PageEnum.BUY_ORDER.getValue();
 	}
 	
 	public String send(){				

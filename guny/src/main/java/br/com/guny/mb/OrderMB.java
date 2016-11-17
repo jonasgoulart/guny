@@ -35,12 +35,12 @@ public class OrderMB {
     
     public void loadOrders(){  	
     	orders = new ArrayList<Order>();  	
-    	orders.add(new Order(new Category("Computadores e Tablets"), "Olá! estou procurando um tablet Samsung para comprar. Pagamento à vista.", new City("São Paulo", "SP"), new User()));
-    	orders.add(new Order(new Category("Computadores e Tablets"), "Estou procurando um notebook Dell Vostro 3300 de 8 Gb de RAM, 13 polegadas, 1T de HD e placa de vídeo dedicada de 2Gb. Pagamento à vista caso haja um bom desconto. Por gentileza não entrar em contato caso não seja o notebook com as características informadas.", new City("Belo Horizonte", "MG"), new User()));
-    	orders.add(new Order(new Category("Computadores e Tablets"), "Olá! estou procurando um tablet Samsung para comprar. Pagamento à vista.", new City("São Paulo", "SP"), new User()));
-    	orders.add(new Order(new Category("Computadores e Tablets"), "Estou procurando um notebook Dell Vostro 3300 de 8 Gb de RAM, 13 polegadas, 1T de HD e placa de vídeo dedicada de 2Gb. Pagamento à vista caso haja um bom desconto. Por gentileza não entrar em contato caso não seja o notebook com as características informadas.", new City("Belo Horizonte", "MG"), new User()));
-    	orders.add(new Order(new Category("Computadores e Tablets"), "Olá! estou procurando um tablet Samsung para comprar. Pagamento à vista.", new City("São Paulo", "SP"), new User()));
-    	orders.add(new Order(new Category("Computadores e Tablets"), "Estou procurando um notebook Dell Vostro 3300 de 8 Gb de RAM, 13 polegadas, 1T de HD e placa de vídeo dedicada de 2Gb. Pagamento à vista caso haja um bom desconto. Por gentileza não entrar em contato caso não seja o notebook com as características informadas.", new City("Belo Horizonte", "MG"), new User()));
+    	orders.add(new Order(new Category(orderForm.getCategory()), "Olá! estou procurando um tablet Samsung para comprar. Pagamento à vista.", new City("São Paulo", "SP"), new User()));
+    	orders.add(new Order(new Category(orderForm.getCategory()), "Estou procurando um notebook Dell Vostro 3300 de 8 Gb de RAM, 13 polegadas, 1T de HD e placa de vídeo dedicada de 2Gb. Pagamento à vista caso haja um bom desconto. Por gentileza não entrar em contato caso não seja o notebook com as características informadas.", new City("Belo Horizonte", "MG"), new User()));
+    	orders.add(new Order(new Category(orderForm.getCategory()), "Olá! estou procurando um tablet Samsung para comprar. Pagamento à vista.", new City("São Paulo", "SP"), new User()));
+    	orders.add(new Order(new Category(orderForm.getCategory()), "Estou procurando um notebook Dell Vostro 3300 de 8 Gb de RAM, 13 polegadas, 1T de HD e placa de vídeo dedicada de 2Gb. Pagamento à vista caso haja um bom desconto. Por gentileza não entrar em contato caso não seja o notebook com as características informadas.", new City("Belo Horizonte", "MG"), new User()));
+    	orders.add(new Order(new Category(orderForm.getCategory()), "Olá! estou procurando um tablet Samsung para comprar. Pagamento à vista.", new City("São Paulo", "SP"), new User()));
+    	orders.add(new Order(new Category(orderForm.getCategory()), "Estou procurando um notebook Dell Vostro 3300 de 8 Gb de RAM, 13 polegadas, 1T de HD e placa de vídeo dedicada de 2Gb. Pagamento à vista caso haja um bom desconto. Por gentileza não entrar em contato caso não seja o notebook com as características informadas.", new City("Belo Horizonte", "MG"), new User()));
     }
    
     public String sendOrder(){	
