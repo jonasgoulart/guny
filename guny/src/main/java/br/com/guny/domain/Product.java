@@ -7,12 +7,15 @@ public class Product {
 	private String shopUrl;
 	
 	private Double price;
+	
+	private Shop shop;
 
-	public Product(String describe, String shopUrl, Double price) {
+	public Product(String describe, String shopUrl, Double price, Shop shop) {
 		super();
 		this.describe = describe;
 		this.shopUrl = shopUrl;
 		this.price = price;
+		this.shop = shop;
 	}
 
 	public String getDescribe() {
@@ -37,5 +40,13 @@ public class Product {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	public Shop getShop() {
+		return shop;
+	}
+
+	public void setShop(Shop shop) {
+		this.shop = shop;
 	}
 }
