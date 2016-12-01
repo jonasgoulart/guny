@@ -24,6 +24,9 @@ public class ShopTagDAO {
 				shops.add(new ShopTag(new Shop("Netshoes", "www.netshoes.com.br"), "h1.base-title", "strong.new-price"));
 				shops.add(new ShopTag(new Shop("Centauro", "www.centauro.com.br"), "h1.product-name", "li.current"));
 				shops.add(new ShopTag(new Shop("Kalunga", "www.kalunga.com.br"), "div.product-txt h1", "span.valor"));
+				shops.add(new ShopTag(new Shop("Magazine Luiza", "www.magazineluiza.com.br"), "div.js-product-title.container-title-product-detail h1", "input[name=productCashPrice]"));
+				shops.add(new ShopTag(new Shop("Fast Shop", "www.fastshop.com.br"), "div.newTitleBar", "input[id=prdPrice]"));
+				shops.add(new ShopTag(new Shop("Kabum", "www.kabum.com.br"), "h1.titulo_det", "span.preco_desconto"));
 				return shops;
 				
 		}catch(Exception ex){

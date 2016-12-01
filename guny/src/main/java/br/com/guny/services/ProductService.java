@@ -1,6 +1,7 @@
 package br.com.guny.services;
 
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import br.com.guny.dao.ShopTagDAO;
 import br.com.guny.domain.Product;
@@ -38,13 +39,25 @@ public class ProductService {
 						/* Configure product price */
 						String[] priceArray = shopTag.getTagProductPrice().split(",");
 												
-						String productPrice = "";					
-						
-						for(int x = 0 ; x < priceArray.length ; x++){							
-							productPrice = productPrice + document.select(priceArray[x]).get(0).text().replace("R$", "").trim().replace("no boleto", "").trim().replace("Por:", "");
+						String productPrice = "";	
+											
+						for(int x = 0 ; x < priceArray.length ; x++){
+							
+							if(document.select(priceArray[x]).get(0).text().isEmpty()){
+								
+								/* For input hidden case */
+								Element buddynameInput = document.select(priceArray[x]).first();
+								productPrice = buddynameInput.attr("value");
+								
+							}else{
+								
+								/* For print view case */
+								productPrice = productPrice + document.select(priceArray[x]).get(0).text().replace("R$", "").trim().replace("no boleto", "").trim().replace("Por:", "").trim().replace("à vista", "").trim();
+								productPrice = productPrice.replace(".", "").replace(",", ".");
+							}
 						}
 									
-			        	return new Product(productName, shopUrl, Double.parseDouble(productPrice.replace(".", "").replace(",", ".")), shopTag.getShop());
+			        	return new Product(productName, shopUrl, Double.parseDouble(productPrice), shopTag.getShop());
 			        }
 				}
 				
