@@ -11,6 +11,7 @@ public class ProductServiceTest {
 		
 		List<String> urls = new ArrayList<String>();
 
+		/*
 		urls.add("http://www.submarino.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
 		urls.add("http://www.americanas.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
 		urls.add("http://www.casasbahia.com.br/TelefoneseCelulares/Smartphones/Android/Smartphone-Samsung-Galaxy-J5-Duos-Dourado-com-Dual-chip-Tela-5-0-4G-Camera-13MP-Android-5-1-e-Processador-Quad-Core-de-1-2-Ghz-5409356.html?IdProduto=2574335&recsource=btermo&rectype=p1_op_s1");
@@ -29,6 +30,8 @@ public class ProductServiceTest {
 		urls.add("http://www.magazineluiza.com.br/smartphone-asus-zenfone-2-32gb-preto-dual-chip-4g-cam.-13mp-selfie-5mp-5.5-full-hd-quad-core/p/2158866/te/zen2/?utm_source=google&utm_medium=pla&cmptype=pla&profileid=410&campaignid=60&keyword=&gclid=COu619Hb09ACFUmBkQod0ZwCtw");
 		urls.add("http://www.fastshop.com.br/loja/smart-tv-samsung-hd-32-wi-fi-un32j4300agxzd-fast?cm_re=FASTSHOP%3a-_-Vitrine+01-_-SGUN32J430PTO");
 		urls.add("http://www.kabum.com.br/produto/58804/fonte-xigmatek-calibre-600w-xcp-a600-80plus");
+		*/
+		urls.add("http://www.domaingames.com.br/magicthegathering/cards/caverna-das-almas_cavern-of-souls/22335/");
 		
 		for(String url : urls){
 			Product product = new ProductService().getProduct(url);

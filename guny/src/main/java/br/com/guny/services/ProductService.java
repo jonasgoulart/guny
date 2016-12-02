@@ -52,7 +52,7 @@ public class ProductService {
 							}else{
 								
 								/* For print view case */
-								productPrice = productPrice + document.select(priceArray[x]).get(0).text().replace("R$", "").trim().replace("no boleto", "").trim().replace("Por:", "").trim().replace("à vista", "").trim();
+								productPrice = productPrice + document.select(priceArray[x]).get(0).text().replace("R$", "").trim().replace("no boleto", "").trim().replace("Por:", "").trim().replace("à vista", "").trim().replace("por", "").trim();
 								productPrice = productPrice.replace(".", "").replace(",", ".");
 							}
 						}
