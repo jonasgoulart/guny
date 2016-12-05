@@ -4,13 +4,11 @@ public class ShopTag {
 
 	private Shop shop;
 	private String tagProductName;
-	private String tagProductPrice;
 	
-	public ShopTag(Shop shop, String tagProductName, String tagProductPrice) {
+	public ShopTag(Shop shop, String tagProductName) {
 		super();
 		this.shop = shop;
 		this.tagProductName = tagProductName;
-		this.tagProductPrice = tagProductPrice;
 	}
 
 	public Shop getShop() {
@@ -27,13 +25,5 @@ public class ShopTag {
 
 	public void setTagProductName(String tagProductName) {
 		this.tagProductName = tagProductName;
-	}
-
-	public String getTagProductPrice() {
-		return tagProductPrice;
-	}
-
-	public void setTagProductPrice(String tagProductPrice) {
-		this.tagProductPrice = tagProductPrice;
 	}
 }

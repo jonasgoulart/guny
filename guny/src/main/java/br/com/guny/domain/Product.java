@@ -5,16 +5,13 @@ public class Product {
 	private String describe;
 	
 	private String shopUrl;
-	
-	private Double price;
-	
+			
 	private Shop shop;
 
-	public Product(String describe, String shopUrl, Double price, Shop shop) {
+	public Product(String describe, String shopUrl,  Shop shop) {
 		super();
 		this.describe = describe;
 		this.shopUrl = shopUrl;
-		this.price = price;
 		this.shop = shop;
 	}
 
@@ -32,14 +29,6 @@ public class Product {
 
 	public void setShopUrl(String shopUrl) {
 		this.shopUrl = shopUrl;
-	}
-
-	public Double getPrice() {
-		return price;
-	}
-
-	public void setPrice(Double price) {
-		this.price = price;
 	}
 
 	public Shop getShop() {

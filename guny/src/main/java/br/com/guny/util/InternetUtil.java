@@ -21,7 +21,7 @@ public class InternetUtil{
 				/* Access URL */
 				Connection connection = Jsoup.connect(shopUrl);
 				connection.userAgent(UserAgentEnum.CHROME.getValue());
-				connection.timeout(10 * 1000);
+				connection.timeout(10 * 10000);
 				document = connection.get();
 				
 				return document;
