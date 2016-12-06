@@ -18,15 +18,17 @@ public class SearchMB implements Serializable{
 	private String searchValue;
 	
 	private Product product;
+	
+	private boolean viewResult;
+	
+	public SearchMB(){
+		viewResult = false;
+	}
 
-	public String search(){			
-		
-		product = new ProductService().getProduct(searchValue);
-		
-		System.out.println("Produto: "+product.getDescribe());
-		System.out.println("Onde: "+ product.getShop().getName());
-		
-		return PageEnum.BUY_ORDER.getValue();
+	public void search(){		
+		product = new ProductService().getProduct(searchValue);	
+		viewResult = true;	
+		//return PageEnum.BUY_ORDER.getValue();
 	}
 	
 	public String send(){				
@@ -47,5 +49,13 @@ public class SearchMB implements Serializable{
 
 	public void setProduct(Product product) {
 		this.product = product;
+	}
+
+	public boolean isViewResult() {
+		return viewResult;
+	}
+
+	public void setViewResult(boolean viewResult) {
+		this.viewResult = viewResult;
 	}
 }

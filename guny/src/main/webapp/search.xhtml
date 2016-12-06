@@ -10,15 +10,7 @@
 	
 		<ui:define name="content">
 			
-			<center>	
-			
-			<h:form>
-    			<h:outputText id="txt_count" value="#{orderNotificationMB.message}" />
-    			<p:poll interval="10" listener="#{orderNotificationMB.verify}" update="txt_count" />
-			</h:form>
-			
-			<br/>
-			<br/>
+			<center>
 			
 			<h:form id="formSearch" styleClass="formSearch">
 			
@@ -28,9 +20,24 @@
 			
 				<div style="margin-bottom: 4px;">
 					<h:inputText id="inputSearch" value="#{searchMB.searchValue}" maxlength="800" pt:placeholder="Encontrou o produto em uma loja virtual? Cole o link aqui" styleClass="inputSearch"/>
-					<h:commandButton id="buttonSearch" action="#{searchMB.search()}" value="Continuar ›" styleClass="buttonSearch"/>		
+					<h:commandButton id="buttonSearch" action="#{searchMB.search}" value="Continuar ›" styleClass="buttonSearch">
+						<f:ajax render="@form" execute="@form" />
+					</h:commandButton>		
 				</div>
-			
+				
+				<h:panelGrid rendered="#{searchMB.viewResult}">
+					<center>
+					<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#10553;</span>		
+					</center>
+					
+					<h:outputLabel value="#{searchMB.product.describe}" styleClass="title" style="font-size: 18px"/>
+					
+					<center>
+					<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#10552;</span>	
+					</center>
+					
+				</h:panelGrid>
+				
 			</h:form>
 	
 			</center>

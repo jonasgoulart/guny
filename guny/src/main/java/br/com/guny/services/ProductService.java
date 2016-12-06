@@ -18,7 +18,6 @@ public class ProductService {
 				for(ShopTag shopTag : new ShopTagDAO().listAll()){
 					
 					if(shopUrl.contains(shopTag.getShop().getSite())){
-
 						/* Identify name and shop name */						
 			        	return new Product(document.select(shopTag.getTagProductName()).get(0).text(), shopUrl, shopTag.getShop());
 			        }
