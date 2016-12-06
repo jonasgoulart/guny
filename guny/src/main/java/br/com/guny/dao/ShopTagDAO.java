@@ -12,8 +12,10 @@ public class ShopTagDAO {
 		
 		try{
 			    List<ShopTag> shops = new ArrayList<ShopTag>();
-				shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "h1.product-name"));
-				shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "h1.product-name"));
+				shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "img.swiper-slide-img"));
+			    //shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "h1.product-name"));
+				shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "img.swiper-slide-img"));
+				//shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "h1.product-name"));
 				shops.add(new ShopTag(new Shop("Casas Bahia", "www.casasbahia.com.br"), "h1.fn.name"));
 				shops.add(new ShopTag(new Shop("Ponto Frio", "www.pontofrio.com.br"), "h1.fn.name"));
 				shops.add(new ShopTag(new Shop("Beefitness", "www.beefitness.com.br"), "h1.tituloBF"));

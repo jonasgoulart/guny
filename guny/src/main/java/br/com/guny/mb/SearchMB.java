@@ -3,13 +3,13 @@ package br.com.guny.mb;
 import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 
 import br.com.guny.domain.Product;
 import br.com.guny.enums.PageEnum;
 import br.com.guny.services.ProductService;
 
-@SessionScoped
+@ViewScoped
 @ManagedBean(name="searchMB")
 public class SearchMB implements Serializable{
 
@@ -19,16 +19,37 @@ public class SearchMB implements Serializable{
 	
 	private Product product;
 	
-	private boolean viewResult;
+	private boolean displaySearchResult;
+	private boolean displaySearchNoResult;
+	private boolean displaySearchErrorResult;
 	
 	public SearchMB(){
-		viewResult = false;
+		this.displaySearchResult = false;
+		this.displaySearchNoResult = false;
+		this.displaySearchErrorResult = false;
 	}
 
-	public void search(){		
-		product = new ProductService().getProduct(searchValue);	
-		viewResult = true;	
-		//return PageEnum.BUY_ORDER.getValue();
+	public void search(){	
+		
+		try{
+				this.product = new ProductService().getProduct(searchValue);	
+				
+				if(product == null){				
+					this.displaySearchResult = false;
+					this.displaySearchNoResult = true;
+				}else{
+					this.displaySearchResult = true;
+					this.displaySearchNoResult = false;
+				}
+				
+				this.displaySearchErrorResult = false;
+								
+		}catch(Exception ex){		
+			this.displaySearchResult = false;
+			this.displaySearchNoResult = false;
+			this.displaySearchErrorResult = true;
+			ex.printStackTrace();
+		}
 	}
 	
 	public String send(){				
@@ -51,11 +72,27 @@ public class SearchMB implements Serializable{
 		this.product = product;
 	}
 
-	public boolean isViewResult() {
-		return viewResult;
+	public boolean isDisplaySearchResult() {
+		return displaySearchResult;
 	}
 
-	public void setViewResult(boolean viewResult) {
-		this.viewResult = viewResult;
+	public void setDisplaySearchResult(boolean displaySearchResult) {
+		this.displaySearchResult = displaySearchResult;
+	}
+
+	public boolean isDisplaySearchNoResult() {
+		return displaySearchNoResult;
+	}
+
+	public void setDisplaySearchNoResult(boolean displaySearchNoResult) {
+		this.displaySearchNoResult = displaySearchNoResult;
+	}
+
+	public boolean isDisplaySearchErrorResult() {
+		return displaySearchErrorResult;
+	}
+
+	public void setDisplaySearchErrorResult(boolean displaySearchErrorResult) {
+		this.displaySearchErrorResult = displaySearchErrorResult;
 	}
 }

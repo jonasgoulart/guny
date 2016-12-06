@@ -12,7 +12,7 @@ public class ProductServiceTest {
 		List<String> urls = new ArrayList<String>();
 		
 		urls.add("http://www.submarino.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
-		urls.add("http://www.americanas.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
+		/*urls.add("http://www.americanas.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
 		urls.add("http://www.casasbahia.com.br/TelefoneseCelulares/Smartphones/Android/Smartphone-Samsung-Galaxy-J5-Duos-Dourado-com-Dual-chip-Tela-5-0-4G-Camera-13MP-Android-5-1-e-Processador-Quad-Core-de-1-2-Ghz-5409356.html?IdProduto=2574335&recsource=btermo&rectype=p1_op_s1");		
 		urls.add("https://www.colombo.com.br/produto/Smartphones/Smartphone-Samsung-Galaxy-J5-Duos-4G-Android-5-1-16GB-13MP-Dourado-J500M-DS");
 		urls.add("https://www.colombo.com.br/produto/Eletrodomesticos/Refrigerador-Geladeira-Brastemp-Frost-Free-2-Portas-352-Litros-BRM39EB?gclid=CjwKEAiAjvrBBRDxm_nRusW3q1QSJAAzRI1t1N7LEfOeo0W3DDEOp59HO7ahwR8ypahhyRpRhu2KkBoCipbw_wcB");
@@ -33,7 +33,7 @@ public class ProductServiceTest {
 		urls.add("http://www.domaingames.com.br/magicthegathering/cards/caverna-das-almas_cavern-of-souls/22335/");				
 		urls.add("https://pt.aliexpress.com/item/Building-Block-Set-Compatible-with-lego-city-ship-Titanic-RMS-Titanic-3D-Construction-Brick-Educational-Hobbies/32649571798.html?spm=2114.42010308.4.2.BkMV8S");
 		urls.add("https://pt.aliexpress.com/item/DHL-free-Factory-unlock-Genuine-original-iPhone-6s-iPhone-6s-plus-mobile-Phone-16GB-64GB-GSM/32502871211.html?spm=2114.30010508.3.20.AsCmxX&ws_ab_test=searchweb0_0,searchweb201602_3_10065_10068_10084_10083_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10099_10078_10079_426_10073_10102_10096_10052_10050_425_10051,searchweb201603_8&btsid=9ccfc4e1-a78b-4a31-af0b-ed39304b2353");
-		
+		*/
 		
 		for(String url : urls){
 			Product product = new ProductService().getProduct(url);
