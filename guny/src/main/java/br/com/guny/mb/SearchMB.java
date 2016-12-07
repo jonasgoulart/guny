@@ -37,6 +37,8 @@ public class SearchMB implements Serializable{
 				if(product == null){				
 					this.displaySearchResult = false;
 					this.displaySearchNoResult = true;
+					this.searchValue = null;
+					
 				}else{
 					this.displaySearchResult = true;
 					this.displaySearchNoResult = false;
@@ -48,6 +50,7 @@ public class SearchMB implements Serializable{
 			this.displaySearchResult = false;
 			this.displaySearchNoResult = false;
 			this.displaySearchErrorResult = true;
+			this.searchValue = null;
 			ex.printStackTrace();
 		}
 	}

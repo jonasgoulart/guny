@@ -18,7 +18,7 @@ public class ShopTagDAO {
 				shops.add(new ShopTag(new Shop("Ponto Frio", "www.pontofrio.com.br"), "h1.fn.name", "img.photo"));
 				shops.add(new ShopTag(new Shop("Walmart", "www.walmart.com.br"), "div.product-title-header", "img.main-picture"));
 				shops.add(new ShopTag(new Shop("Ponto Frio", "www.pontofrio.com.br"), "h1.fn.name", "img.photo"));
-				
+
 				/*
 				shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "h1.product-name"));			
 				shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "h1.product-name"));

@@ -35,23 +35,39 @@
 				</div>
 				
 				<!-- For sucess process -->
-				<h:panelGrid columns="1" rendered="#{searchMB.displaySearchResult}" style="width: 40% ">				
+				<h:panelGrid columns="1" rendered="#{searchMB.displaySearchResult}" style="width: 70% ">				
 					<h:column>
 						<center>						
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#10553;</span>	
 							<br/>
-							<h:graphicImage value="#{searchMB.product.imageUrl}" style="width: 279px;"/>	
+							<h:graphicImage value="#{searchMB.product.imageUrl}" style="width: 239px;"/>
 							<br/>						
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#10552;</span>
 						</center>
 					</h:column>			
 					<h:column>
-						<h:inputText id="inputCity" maxlength="80" pt:placeholder="Em qual cidade devemos procurar?" styleClass="inputDefault"/>	
-					</h:column>									
+						<center>
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128521;</span>
+							<br/>
+							<h:outputText value="Oba! A loja topou fazer pelo o mesmo preço anunciado no site" styleClass="title" style="font-size: 20px !important"/>
+							<br/>
+							<h:outputText value="Vá até a Phoneworld no Conjunto Nacional, Av. Paulista e compre hoje mesmo!" styleClass="subTitle"/>
+							<br/>
+							<br/>						
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#x21c5;</span>							
+						</center>		
+					</h:column>	
+					<h:column>
+						<center>
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128527;</span>
+							<br/>
+							<h:outputText value="Além de incentivar o comércio local você também pode conseguir melhores condições e ter em mãos hoje mesmo aquele produto que você tanto quer!" styleClass="title" style="font-size: 20px !important"/>
+						</center>	
+					</h:column>								
 				</h:panelGrid>
 				
 				<!-- For no result process -->
-				<h:panelGrid rendered="#{searchMB.displaySearchNoResult}" style="width: 40% ">
+				<h:panelGrid rendered="#{searchMB.displaySearchNoResult}" style="width: 70% ">
 					<h:column>
 						<center>
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128530;</span>
@@ -62,7 +78,7 @@
 				</h:panelGrid>
 				
 				<!-- For error process -->
-				<h:panelGrid rendered="#{searchMB.displaySearchErrorResult}" style="width: 40% ">
+				<h:panelGrid rendered="#{searchMB.displaySearchErrorResult}" style="width: 70% ">
 					<h:column>
 						<center>
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128530;</span>		

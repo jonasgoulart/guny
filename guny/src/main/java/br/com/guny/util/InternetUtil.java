@@ -1,5 +1,7 @@
 package br.com.guny.util;
 
+import java.util.Date;
+
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -14,15 +16,19 @@ public class InternetUtil{
 
 	public static Document readPage(String shopUrl){
 		
-		try{				
+		try{			
+				System.out.println("Start: "+new Date());
+			
 				/* Proxy configuration */
-				ProxyUtil.configProxy();	
+				//ProxyUtil.configProxy();	
 			
 				/* Access URL */
 				Connection connection = Jsoup.connect(shopUrl);
 				connection.userAgent(UserAgentEnum.CHROME.getValue());
 				connection.timeout(10 * 10000);
 				document = connection.get();
+				
+				System.out.println("Final: "+new Date());
 				
 				return document;
 				
