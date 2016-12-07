@@ -4,11 +4,13 @@ public class ShopTag {
 
 	private Shop shop;
 	private String tagProductName;
+	private String tagProductImage;
 	
-	public ShopTag(Shop shop, String tagProductName) {
+	public ShopTag(Shop shop, String tagProductName, String tagProductImage) {
 		super();
 		this.shop = shop;
 		this.tagProductName = tagProductName;
+		this.tagProductImage = tagProductImage;
 	}
 
 	public Shop getShop() {
@@ -25,5 +27,13 @@ public class ShopTag {
 
 	public void setTagProductName(String tagProductName) {
 		this.tagProductName = tagProductName;
+	}
+
+	public String getTagProductImage() {
+		return tagProductImage;
+	}
+
+	public void setTagProductImage(String tagProductImage) {
+		this.tagProductImage = tagProductImage;
 	}
 }

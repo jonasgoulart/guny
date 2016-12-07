@@ -12,10 +12,16 @@ public class ShopTagDAO {
 		
 		try{
 			    List<ShopTag> shops = new ArrayList<ShopTag>();
-				shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "img.swiper-slide-img"));
-			    //shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "h1.product-name"));
-				shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "img.swiper-slide-img"));
-				//shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "h1.product-name"));
+				shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "h1.product-name", "img.swiper-slide-img"));		    
+				shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "h1.product-name", "img.swiper-slide-img"));
+				shops.add(new ShopTag(new Shop("Casas Bahia", "www.casasbahia.com.br"), "h1.fn.name", "img.photo"));
+				shops.add(new ShopTag(new Shop("Ponto Frio", "www.pontofrio.com.br"), "h1.fn.name", "img.photo"));
+				shops.add(new ShopTag(new Shop("Walmart", "www.walmart.com.br"), "div.product-title-header", "img.main-picture"));
+				shops.add(new ShopTag(new Shop("Ponto Frio", "www.pontofrio.com.br"), "h1.fn.name", "img.photo"));
+				
+				/*
+				shops.add(new ShopTag(new Shop("Submarino", "www.submarino.com.br"), "h1.product-name"));			
+				shops.add(new ShopTag(new Shop("Americanas", "www.americanas.com.br"), "h1.product-name"));
 				shops.add(new ShopTag(new Shop("Casas Bahia", "www.casasbahia.com.br"), "h1.fn.name"));
 				shops.add(new ShopTag(new Shop("Ponto Frio", "www.pontofrio.com.br"), "h1.fn.name"));
 				shops.add(new ShopTag(new Shop("Beefitness", "www.beefitness.com.br"), "h1.tituloBF"));
@@ -31,6 +37,7 @@ public class ShopTagDAO {
 				shops.add(new ShopTag(new Shop("Kabum", "www.kabum.com.br"), "h1.titulo_det"));
 				shops.add(new ShopTag(new Shop("Domain Games", "www.domaingames.com.br"), "h2.font_GBlack"));
 				shops.add(new ShopTag(new Shop("AliExpress", "aliexpress.com"), "h1.product-name"));
+				*/
 				return shops;
 				
 		}catch(Exception ex){

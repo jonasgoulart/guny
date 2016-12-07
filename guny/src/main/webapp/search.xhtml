@@ -37,12 +37,12 @@
 				<!-- For sucess process -->
 				<h:panelGrid columns="1" rendered="#{searchMB.displaySearchResult}" style="width: 40% ">				
 					<h:column>
-						<center>
-							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#10553;</span>
+						<center>						
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#10553;</span>	
 							<br/>
-							<h:graphicImage value="#{searchMB.product.describe}" style="width: 279px;"/>	
-							<br/>
-							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#10552;</span>	
+							<h:graphicImage value="#{searchMB.product.imageUrl}" style="width: 279px;"/>	
+							<br/>						
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#10552;</span>
 						</center>
 					</h:column>			
 					<h:column>
@@ -56,7 +56,7 @@
 						<center>
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128530;</span>
 							<br/>		
-							<h:outputLabel value="Ops! Não encontramos o que você procurou." styleClass="title" style="font-size: 18px"/>
+							<h:outputLabel value="Ops! Não conseguimos identificar o produto indicado pelo link." styleClass="title" style="font-size: 18px"/>
 						</center>
 					</h:column>
 				</h:panelGrid>

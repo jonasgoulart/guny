@@ -1,7 +1,6 @@
 package br.com.guny.services;
 
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 
 import br.com.guny.dao.ShopTagDAO;
 import br.com.guny.domain.Product;
@@ -19,13 +18,8 @@ public class ProductService {
 				for(ShopTag shopTag : new ShopTagDAO().listAll()){
 					
 					if(shopUrl.contains(shopTag.getShop().getSite())){
-						/* Identify name and shop name */						
-			        	//return new Product(document.select(shopTag.getTagProductName()).get(0).text(), shopUrl, shopTag.getShop());
-						Element img = document.select(shopTag.getTagProductName()).first();
-						
-						String imgSrc = img.attr("src");
-						
-						return new Product(imgSrc, shopUrl, shopTag.getShop());
+						/* Identify name, image and shop name */
+						return new Product(document.select(shopTag.getTagProductName()).get(0).text(), shopUrl, document.select(shopTag.getTagProductImage()).first().attr("src").replace("//static", "https://static"), shopTag.getShop());
 			        }
 				}
 				

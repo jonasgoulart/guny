@@ -11,7 +11,12 @@ public class ProductServiceTest {
 		
 		List<String> urls = new ArrayList<String>();
 		
-		urls.add("http://www.submarino.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
+		//urls.add("http://www.submarino.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
+		//urls.add("http://www.casasbahia.com.br/Eletrodomesticos/maquinadelavar/Acimade10kg/Lavadora-de-Roupas-Brastemp-11-kg-BWJ11AB-com-Turbo-Performance-%E2%80%93-Branca-10030421.html?recsource=home-13_4-3-1-1_5_19591&rectype=11667-int");
+		urls.add("https://www.walmart.com.br/smartphone-samsung-galaxy-j5-sm-j500m-ds-dourado-dual-chip-android-5-1-lollipop-4g-wi-fi-16gb/telefonia/celulares-e-smartphones/3216990/pr");
+		//urls.add("http://www.pontofrio.com.br/TelefoneseCelulares/Smartphones/Android/Smartphone-Samsung-Galaxy-J5-Duos-Dourado-com-Dual-chip-Tela-5-0-4G-Camera-13MP-Android-5-1-e-Processador-Quad-Core-de-1-2-Ghz-5409356.html?IdProduto=2574335&recsource=btermo&rectype=p1_op_s1");
+		//urls.add("http://www.centauro.com.br/bota-nord-outdoor-titanium-masculina-10200-856395.html?cor=02");
+		
 		/*urls.add("http://www.americanas.com.br/produto/124132646/smartphone-samsung-galaxy-j5-duos-dual-chip-android-5.1-tela-5-16gb-4g-wi-fi-camera-13mp-dourado");
 		urls.add("http://www.casasbahia.com.br/TelefoneseCelulares/Smartphones/Android/Smartphone-Samsung-Galaxy-J5-Duos-Dourado-com-Dual-chip-Tela-5-0-4G-Camera-13MP-Android-5-1-e-Processador-Quad-Core-de-1-2-Ghz-5409356.html?IdProduto=2574335&recsource=btermo&rectype=p1_op_s1");		
 		urls.add("https://www.colombo.com.br/produto/Smartphones/Smartphone-Samsung-Galaxy-J5-Duos-4G-Android-5-1-16GB-13MP-Dourado-J500M-DS");
@@ -38,6 +43,7 @@ public class ProductServiceTest {
 		for(String url : urls){
 			Product product = new ProductService().getProduct(url);
 			System.out.println("Produto: "+product.getDescribe());
+			System.out.println("Image: "+product.getImageUrl());
 			System.out.println("Onde: "+ product.getShop().getName());
 			System.out.println("------------------------------------------");
 		}
