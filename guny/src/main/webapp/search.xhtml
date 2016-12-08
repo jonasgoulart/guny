@@ -23,7 +23,7 @@
 			<h:form id="formSearch" styleClass="formSearch">
 						
 				<div style="margin-bottom: 4px">
-					<h:outputLabel for="labelSearch" value="Negocie com vendedores de São Paulo e Região os melhores preços!" styleClass="title"/>
+					<h:outputLabel for="labelSearch" value="Compre em lojas de São Paulo e Região com melhores preços e condições!" styleClass="title"/>
 				</div>
 			
 				<!-- Search form -->
@@ -38,30 +38,34 @@
 				<h:panelGrid columns="1" rendered="#{searchMB.displaySearchResult}" style="width: 70% ">				
 					<h:column>
 						<center>						
-							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#10553;</span>	
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; margin-left: -200px; font-weight: bold;">&#10553;</span>	
 							<br/>
-							<h:graphicImage value="#{searchMB.product.imageUrl}" style="width: 239px;"/>
-							<br/>						
-							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#10552;</span>
+							<h:graphicImage value="#{searchMB.product.imageUrl}" style="width: 209px;"/>
+							<br/>					
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; margin-left: 150px; font-weight: bold">&#10552;</span>
 						</center>
 					</h:column>			
 					<h:column>
 						<center>
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128521;</span>
 							<br/>
-							<h:outputText value="Oba! A loja topou fazer pelo o mesmo preço anunciado no site" styleClass="title" style="font-size: 20px !important"/>
-							<br/>
-							<h:outputText value="Vá até a Phoneworld no Conjunto Nacional, Av. Paulista e compre hoje mesmo!" styleClass="subTitle"/>
+							<h:outputText value="Oba! Habemus bons preços" styleClass="title" style="font-size: 22px !important"/>
+							<br/>	
+							<h:panelGrid columns="1" style="font-size: 14px !important; font-family: Verdana">
+								<h:outputText value="Na Americanas Express da Av. Paulista 900 conseguimos pelo preço de &lt;b&gt;R$ 1.999,00&lt;/b&gt; em até 10x s/ juros" escape="false" styleClass="outputTextDefault"/>
+								<h:outputText value="Na Americanas Express da Rua Augusta 1200 conseguimos pelo preço de &lt;b&gt;R$ 2.025,00&lt;/b&gt; em até 10x s/ juros" escape="false" styleClass="outputTextDefault"/>
+								<h:outputText value="Na Americanas Express da Av. Sumaré 200 conseguimos pelo preço de &lt;b&gt;R$ 2.045,00&lt;/b&gt; em até 12x s/ juros" escape="false" styleClass="outputTextDefault"/>
+							</h:panelGrid>						
 							<br/>
 							<br/>						
-							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold">&#x21c5;</span>							
+							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 70px; font-weight: bold">&#x21c5;</span>							
 						</center>		
 					</h:column>	
 					<h:column>
 						<center>
 							<span style="margin-top: 25px; margin-bottom: 25px; font-size: 80px; font-weight: bold;">&#128527;</span>
 							<br/>
-							<h:outputText value="Além de incentivar o comércio local você também pode conseguir melhores condições e ter em mãos hoje mesmo aquele produto que você tanto quer!" styleClass="title" style="font-size: 20px !important"/>
+							<h:outputText value="Além de incentivar o comércio local você também pode conseguir melhores condições de pagamento e ter em mãos hoje mesmo aquele produto que você tanto quer!" styleClass="title" style="font-size: 20px !important"/>
 						</center>	
 					</h:column>								
 				</h:panelGrid>

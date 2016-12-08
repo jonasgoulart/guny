@@ -20,7 +20,7 @@ public class InternetUtil{
 				System.out.println("Start: "+new Date());
 			
 				/* Proxy configuration */
-				//ProxyUtil.configProxy();	
+				ProxyUtil.configProxy();	
 			
 				/* Access URL */
 				Connection connection = Jsoup.connect(shopUrl);

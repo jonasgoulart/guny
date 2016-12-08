@@ -30,6 +30,9 @@
 	padding-bottom: 25px;
 }
 
+b{
+	font-size: 16px !important;
+}
 
 .link{
 	color: #3a3a3a;
@@ -277,6 +280,10 @@
 .outputTextUserWelcome{
 	margin-left: 10px;
     margin-right: 10px;
+}
+
+.outputTextDefault{
+	font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 
